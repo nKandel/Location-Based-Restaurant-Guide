@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b3b3b"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:paddingLeft="15dip"
+        android:text="item_name" />
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="40"
+        android:gravity="right"
+        android:paddingRight="15dip"
+        android:text="item_price" />
+
+</LinearLayout>

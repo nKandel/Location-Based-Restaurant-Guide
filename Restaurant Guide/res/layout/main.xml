@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <TextView
+        android:id="@+id/tvcurrentlocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:text="Your current location is ..."
+        android:typeface="serif" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dip" />
+
+    <TextView
+        android:id="@+id/tvnearesthotel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="HOTELS/RESTAURANTS"
+        android:textStyle="bold"
+        android:textSize="20dip"
+        android:typeface="serif" />
+<!-- List Divider -->
+	<View android:layout_width="fill_parent"
+		android:layout_height="1dip"
+		android:background="?android:attr/listDivider" />
+    <!-- ListView (grid_items) -->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
